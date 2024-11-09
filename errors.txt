@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 110: expected statement.
-    first_day = False
-              ^
+File "game/script.rpy", line 234: expected ':' not found.
+    "编辑软件闪退了"：
+             ^
 
 Ren'Py Version: Ren'Py 8.3.2.24090902
-Fri Nov  8 20:48:42 2024
+Sat Nov  9 22:14:06 2024
