@@ -23,7 +23,6 @@ label start:
                 jump close_alarm
             "还是离开温暖的被窝吧":
                 jump get_up
-    return
 
 label close_alarm:
     i "困死啦，再睡两分钟吧！"
@@ -47,6 +46,12 @@ label close_alarm:
 
     "教授" "我们上节课说到了......"
 
+    if first_day:
+        jump class_first_day
+    else:
+        jump class_second_day
+
+label class_first_day:
     i "好困啊zzz"
     i "要是作业有点自律意识把自己写了就好了。"
     i "这样我昨晚也不用熬夜补作业了啊喂！"
@@ -283,8 +288,7 @@ label library02:
     "......"
 
     "不知道过了多久，你艰难地进入了梦乡，并不温暖的梦乡。"
-
-    "（一周目到此结束）"
+    "......"
 
     $ first_day = False
 
